@@ -137,26 +137,20 @@
       <label>Nome do entrevistado</label>
       <input type="text" name="entry.449282386" required>
 
-      <br>
-
       <label>Cargo</label>
       <div class="options">
-        <label><input type="radio" name="entry.196842600" value="Dono / Sócio"> Dono / Sócio</label>
+        <label><input type="radio" name="entry.196842600" value="Dono / Sócio" required> Dono / Sócio</label>
         <label><input type="radio" name="entry.196842600" value="Gestor"> Gestor</label>
         <label><input type="radio" name="entry.196842600" value="Técnico"> Técnico</label>
         <label><input type="radio" name="entry.196842600" value="Comercial"> Comercial</label>
       </div>
 
-      <br>
-
       <label>Nome do ISP</label>
       <input type="text" name="entry.1107973939">
 
-      <br>
-
-      <label>Tamanho aproximado no ISP</label>
+      <label>Tamanho aproximado do ISP</label>
       <div class="options">
-        <label><input type="radio" name="entry.1608731627" value="Até 1.000 clientes"> Até 1.000 clientes</label>
+        <label><input type="radio" name="entry.1608731627" value="Até 1.000 clientes" required> Até 1.000 clientes</label>
         <label><input type="radio" name="entry.1608731627" value="1.000 a 5.000 clientes"> 1.000 a 5.000 clientes</label>
         <label><input type="radio" name="entry.1608731627" value="Mais de 5.000 clientes"> Mais de 5.000 clientes</label>
       </div>
@@ -168,19 +162,17 @@
 
       <label>Hoje o churn para seu provedor:</label>
       <div class="options">
-        <label><input type="radio" name="entry.1467484676" value="Não é um problema"> Não é um problema</label>
+        <label><input type="radio" name="entry.1467484676" value="Não é um problema" required> Não é um problema</label>
         <label><input type="radio" name="entry.1467484676" value="Problema moderado"> Problema moderado</label>
         <label><input type="radio" name="entry.1467484676" value="Problema sério"> Problema sério</label>
         <label><input type="radio" name="entry.1467484676" value="Um dos principais problemas"> Um dos principais problemas</label>
       </div>
 
-      <br>
-
       <label>Quando vocês percebem que o cliente vai cancelar?</label>
       <div class="options">
-        <label><input type="radio" name="entry.1997928091" value="Antes do pedido"> Antes do pedido de cancelamento</label>
+        <label><input type="radio" name="entry.1997928091" value="Antes do pedido de cancelamento" required> Antes do pedido de cancelamento</label>
         <label><input type="radio" name="entry.1997928091" value="No pedido de cancelamento"> No pedido de cancelamento</label>
-        <label><input type="radio" name="entry.1997928091" value="Só depois que já saiu"> Só depois que o cliente já saiu</label>
+        <label><input type="radio" name="entry.1997928091" value="Só depois que o cliente já saiu"> Só depois que o cliente já saiu</label>
       </div>
     </div>
 
@@ -202,18 +194,15 @@
       <h2>4️⃣ Solução</h2>
 
       <label>Se você tivesse uma lista de clientes correndo risco de churn, sabendo o motivo do churn, essa lista:</label>
-
       <div class="options">
-        <label><input type="radio" name="entry.484245330" value="Ajudaria pouco"> Ajudaria bastante </label>
-        <label><input type="radio" name="entry.484245330" value="Ajudaria bastante"> Ajudaria pouco </label>
-        <label><input type="radio" name="entry.484245330" value="Seria extremamente útil"> Não ajudaria </label>
+        <label><input type="radio" name="entry.484245330" value="Ajudaria bastante" required> Ajudaria bastante</label>
+        <label><input type="radio" name="entry.484245330" value="Ajudaria pouco"> Ajudaria pouco</label>
+        <label><input type="radio" name="entry.484245330" value="Não ajudaria"> Não ajudaria</label>
       </div>
-
-      <br>
 
       <label>Você testaria uma solução assim?</label>
       <div class="options">
-        <label><input type="radio" name="entry.1173380493" value="Sim"> Sim</label>
+        <label><input type="radio" name="entry.1173380493" value="Sim" required> Sim</label>
         <label><input type="radio" name="entry.1173380493" value="Talvez"> Talvez</label>
         <label><input type="radio" name="entry.1173380493" value="Não"> Não</label>
       </div>
@@ -228,7 +217,7 @@
     <button type="submit" class="btn">Salvar respostas</button>
 
     <p class="success" id="successMsg">✔ Respostas registradas com sucesso</p>
-    <p class="note">Dados salvos automaticamente no Google Forms.</p>
+    <p class="note">Dados enviados diretamente para o Google Forms.</p>
 
   </form>
 
@@ -243,7 +232,7 @@
     setTimeout(() => {
       form.reset();
       successMsg.style.display = "block";
-    }, 500);
+    }, 600);
   });
 </script>
 
